@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivere Cafe | Sweet & Modern</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .info-section { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; text-align: center; }
+        .info-card { background: var(--white); padding: 2rem; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 2rem; }
+        .career-card { background: var(--background); padding: 1.5rem; border-radius: 15px; margin-bottom: 1rem; text-align: left; border-left: 4px solid var(--primary); }
+        .job-status { font-size: 0.8rem; background: var(--secondary); color: white; padding: 0.2rem 0.5rem; border-radius: 10px; margin-left: 1rem; }
+        
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; text-align: left; }
+        .footer-col h3 { color: var(--primary); margin-bottom: 1rem; }
+        .footer-col p { margin-bottom: 0.5rem; color: #ddd; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Vivere.</a>
+            <nav class="nav-links">
+                <a href="#about">About Us</a>
+                <a href="#menu">Menu</a>
+                <a href="#careers">Careers</a>
+                <a href="#expectations">Expectations</a>
+                <a href="#contact">Join Us</a>
+                <a href="admin.html" class="admin-link">Admin Panel</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Experience Vivere</h1>
+            <p>Your daily dose of aesthetics, premium matcha, and sweet moments.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="info-section">
+        <h2 class="section-title">About Us</h2>
+        <div class="info-card">
+            <p id="about-us-content">Loading...</p>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">Our Offerings</h2>
+        <div id="menu-container">
+            <!-- Products injected by main.js -->
+        </div>
+    </section>
+
+    <!-- Customer Expectations -->
+    <section id="expectations" class="info-section" style="background: var(--background);">
+        <h2 class="section-title">Customer Expectations</h2>
+        <div class="info-card">
+            <p id="expectations-content">Loading...</p>
+        </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" class="info-section">
+        <h2 class="section-title">Careers / Job Openings</h2>
+        <div id="careers-list">
+            <!-- Careers injected by main.js -->
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="contact" class="mis-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h2 class="section-title" style="margin-bottom: 1rem;">Let's Get to Know You</h2>
+                <p>Help us improve your experience. Your data is used to curate better products.</p>
+            </div>
+            
+            <form id="customer-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="form-control" required placeholder="John Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" required placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="preference">Favorite Category</label>
+                    <select id="preference" class="form-control" required>
+                        <option value="" disabled selected>Select your favorite...</option>
+                        <option value="Coffee Types">Coffee Types</option>
+                        <option value="Matcha">Matcha</option>
+                        <option value="Desserts">Desserts</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="intent">What brings you here today?</label>
+                    <textarea id="intent" class="form-control" rows="3" placeholder="E.g., I want to try the Strawberry Matcha..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Submit Preferences</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="background: var(--text-dark); color: var(--white); padding: 4rem 2rem;">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Vivere Cafe</h3>
+                <p id="footer-feedback">Loading...</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>📍 <span id="footer-address">Loading...</span></p>
+                <p>📞 <span id="footer-phone">Loading...</span></p>
+                <p>✉️ <span id="footer-email">Loading...</span></p>
+                <p>📱 <span id="footer-insta">Loading...</span></p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem; border-top: 1px solid #555; padding-top: 1rem;">
+            <p>&copy; 2026 Vivere Cafe. All rights reserved. MIS Project Demo.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
