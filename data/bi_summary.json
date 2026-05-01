@@ -1,0 +1,8 @@
+{
+  "products": ["Signature Latte", "Cold Brew", "Almond Croissant", "Monthly Coffee Plan"],
+  "clicks": [42, 64, 35, 27],
+  "sales": [32, 48, 30, 16],
+  "revenue": [144.0, 240.0, 112.5, 352.0],
+  "preferences": {"Hot Coffee": 28, "Cold Coffee": 40, "Pastry": 20, "Subscription": 12},
+  "monthly_sales": {"January": 220, "February": 260, "March": 310, "April": 390}
+}
